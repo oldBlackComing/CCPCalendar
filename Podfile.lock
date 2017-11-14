@@ -63,10 +63,14 @@ PODS:
   - CIWFramework/Utils/XIBUtils (1.0.0):
     - AFNetworking (~> 2.6)
     - PureLayout (~> 3.0.1)
+  - JCore (1.1.5)
+  - JPush (3.0.6):
+    - JCore (~> 1.1.1)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - CIWFramework (from `http://git.hapn.cc/ios/ciw_framework.git`)
+  - JPush
 
 EXTERNAL SOURCES:
   CIWFramework:
@@ -80,8 +84,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   CIWFramework: ba12459ef97374d63f5173f5c45d87a3bcfea091
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: 7e379cd05ba3f0cc54d8b6478bd984b7e8fcebba
+PODFILE CHECKSUM: 96b814fa93a169e82434229dcc0d8001b0bee1cc
 
 COCOAPODS: 1.2.1
