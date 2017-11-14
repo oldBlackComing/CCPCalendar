@@ -1,0 +1,7 @@
+source 'http://git.hapn.cc/ios/ciw_framework.git'  #我们自己的私有spec仓库的地址
+ source 'https://github.com/CocoaPods/Specs.git'  #官方仓库的地址
+platform :ios, '8.0'
+ target "CCPCalendar" do
+ #pod 'AFNetworking', '~> 2.6'
+ pod 'CIWFramework', :git => 'http://git.hapn.cc/ios/ciw_framework.git'
+ end

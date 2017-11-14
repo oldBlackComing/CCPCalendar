@@ -1,0 +1,87 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CIWFramework (1.0.0):
+    - AFNetworking (~> 2.6)
+    - CIWFramework/Additions (= 1.0.0)
+    - CIWFramework/Common (= 1.0.0)
+    - CIWFramework/Model (= 1.0.0)
+    - CIWFramework/Network (= 1.0.0)
+    - CIWFramework/Utils (= 1.0.0)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Additions (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Common (1.0.0):
+    - AFNetworking (~> 2.6)
+    - CIWFramework/Common/Debug (= 1.0.0)
+    - CIWFramework/Common/Images (= 1.0.0)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Common/Debug (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Common/Images (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Model (1.0.0):
+    - AFNetworking (~> 2.6)
+    - CIWFramework/Model/CustomModel (= 1.0.0)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Model/CustomModel (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Network (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Utils (1.0.0):
+    - AFNetworking (~> 2.6)
+    - CIWFramework/Utils/Message (= 1.0.0)
+    - CIWFramework/Utils/XIBUtils (= 1.0.0)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Utils/Message (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - CIWFramework/Utils/XIBUtils (1.0.0):
+    - AFNetworking (~> 2.6)
+    - PureLayout (~> 3.0.1)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - CIWFramework (from `http://git.hapn.cc/ios/ciw_framework.git`)
+
+EXTERNAL SOURCES:
+  CIWFramework:
+    :git: http://git.hapn.cc/ios/ciw_framework.git
+
+CHECKOUT OPTIONS:
+  CIWFramework:
+    :commit: 3ea366e3515458228027618496b57b961c9faeda
+    :git: http://git.hapn.cc/ios/ciw_framework.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  CIWFramework: ba12459ef97374d63f5173f5c45d87a3bcfea091
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: 7e379cd05ba3f0cc54d8b6478bd984b7e8fcebba
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,1 @@
+../../../CIWFramework/CIWFramework/Classes/Common/Images/CIWImageDataOperation.h

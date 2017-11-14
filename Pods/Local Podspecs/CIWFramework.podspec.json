@@ -1,0 +1,85 @@
+{
+  "name": "CIWFramework",
+  "version": "1.0.0",
+  "summary": "hunbohui iOS team develop Framework.",
+  "description": "hunbohui iOS team develop Framework.\n当前使用的app有 （婴芭莎）",
+  "homepage": "http://gitlab.hapn.cc/ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gaoguohao": "gaoguohao@hunbasha.com"
+  },
+  "source": {
+    "git": "http://gitlab.hapn.cc/ios/ciw_framework.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "CIWFramework/Classes/CIWFrameWorkHeader.h",
+  "prefix_header_contents": "#import \"CIWFrameWorkHeader.h\"",
+  "resources": "CIWFramework/Assets/CIWBundle.bundle",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.6"
+    ],
+    "PureLayout": [
+      "~> 3.0.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Model",
+      "source_files": "CIWFramework/Classes/Model/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "CustomModel",
+          "source_files": "CIWFramework/Classes/Model/CustomModel/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "Additions",
+      "source_files": "CIWFramework/Classes/Additions/**/*.{h,m}"
+    },
+    {
+      "name": "Common",
+      "source_files": "CIWFramework/Classes/Common/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Debug",
+          "source_files": "CIWFramework/Classes/Common/Debug/*.{h,m}"
+        },
+        {
+          "name": "Images",
+          "source_files": "CIWFramework/Classes/Common/Images/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "source_files": "CIWFramework/Classes/Network/**/*.{h,m}"
+    },
+    {
+      "name": "Utils",
+      "source_files": "CIWFramework/Classes/Utils/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "XIBUtils",
+          "source_files": "CIWFramework/Classes/Utils/XIBUtils/*.{h,m}"
+        },
+        {
+          "name": "Message",
+          "source_files": "CIWFramework/Classes/Utils/Message/*.{h,m}"
+        }
+      ]
+    }
+  ]
+}
