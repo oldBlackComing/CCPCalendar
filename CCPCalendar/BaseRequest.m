@@ -38,8 +38,8 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
     
-    NSString *timeInterval = [NSString stringWithFormat:@"%.0f",[[NSDate date] timeIntervalSince1970] * 1000];
-    [params setObject:timeInterval forKey:@"client_timestamp"];
+//    NSString *timeInterval = [NSString stringWithFormat:@"%.0f",[[NSDate date] timeIntervalSince1970] * 1000];
+//    [params setObject:timeInterval forKey:@"client_timestamp"];
     
 //    [params setObject:APP_VERSION forKey:@"client_version"];
 

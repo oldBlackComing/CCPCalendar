@@ -95,10 +95,15 @@
     
     _content = content;
     if(content){
-        
-        //Temp目录下的js文件在根路径，因此需要在加载HTMLString时指定根路径
-        NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
-        [_webView loadHTMLString:content baseURL:baseURL];
+        if ([content containsString:@"http"]) {
+            NSURL* url = [NSURL URLWithString:content];//创建URL
+            NSURLRequest* request = [NSURLRequest requestWithURL:url];//创建NSURLRequest
+            [_webView loadRequest:request];//加载
+        }else if (![content containsString:@"http"]){
+            //Temp目录下的js文件在根路径，因此需要在加载HTMLString时指定根路径
+            NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+            [_webView loadHTMLString:content baseURL:baseURL];
+        }
     }
 }
 
@@ -139,9 +144,9 @@
 
 /**获取webview内容的高度*/
 - (CGFloat)getContentHeight{
-    NSString *height_str= [_webView stringByEvaluatingJavaScriptFromString: @"document.body.offsetHeight"];
-    CGFloat height = [height_str floatValue];
-    return height;
+//    NSString *height_str= [_webView stringByEvaluatingJavaScriptFromString: @"document.body.offsetHeight"];
+//    CGFloat height = [height_str floatValue];
+    return [UIScreen mainScreen].bounds.size.height;
 }
 
 /**获取web中的所有的图片*/

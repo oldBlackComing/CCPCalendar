@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F72E7461FBBE40E006E9D14 /* BaseBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72E7451FBBE40E006E9D14 /* BaseBaseModel.m */; };
 		3F86078B1FBA894D00A43E89 /* BBSContentWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8607881FBA894C00A43E89 /* BBSContentWebView.xib */; };
 		3F86078C1FBA894D00A43E89 /* BBSContentWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86078A1FBA894D00A43E89 /* BBSContentWebView.m */; };
 		3F86078F1FBA89C400A43E89 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86078D1FBA89C300A43E89 /* BaseRequest.m */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F72E7441FBBE40E006E9D14 /* BaseBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBaseModel.h; sourceTree = "<group>"; };
+		3F72E7451FBBE40E006E9D14 /* BaseBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBaseModel.m; sourceTree = "<group>"; };
 		3F8607881FBA894C00A43E89 /* BBSContentWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBSContentWebView.xib; sourceTree = "<group>"; };
 		3F8607891FBA894C00A43E89 /* BBSContentWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSContentWebView.h; sourceTree = "<group>"; };
 		3F86078A1FBA894D00A43E89 /* BBSContentWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSContentWebView.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				3F8607881FBA894C00A43E89 /* BBSContentWebView.xib */,
 				3F86078E1FBA89C300A43E89 /* BaseRequest.h */,
 				3F86078D1FBA89C300A43E89 /* BaseRequest.m */,
+				3F72E7441FBBE40E006E9D14 /* BaseBaseModel.h */,
+				3F72E7451FBBE40E006E9D14 /* BaseBaseModel.m */,
 				8B684DA31EEE3D3D006660B3 /* CCPCalendar */,
 				8B717CFA1ED65D2800A78DC8 /* Main.storyboard */,
 				8B717CFD1ED65D2800A78DC8 /* Assets.xcassets */,
@@ -233,7 +238,7 @@
 				TargetAttributes = {
 					8B717CED1ED65D2800A78DC8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4K9G5Z5YP8;
+						DevelopmentTeam = 5KZ9L285B5;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -332,6 +337,7 @@
 				8B684DBF1EEE3D3D006660B3 /* CCPCalendarTable.m in Sources */,
 				8B717CF91ED65D2800A78DC8 /* ViewController.m in Sources */,
 				3F98F9C91FB45B1B00FFB703 /* ListViewController.m in Sources */,
+				3F72E7461FBBE40E006E9D14 /* BaseBaseModel.m in Sources */,
 				8B684DC11EEE3D3D006660B3 /* NSDate+CCPCalendar.m in Sources */,
 				8B684DBA1EEE3D3D006660B3 /* CCPCalendarButton.m in Sources */,
 				8B684DC31EEE3D3D006660B3 /* UILabel+CCPLabel.m in Sources */,
@@ -462,14 +468,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4K9G5Z5YP8;
+				DEVELOPMENT_TEAM = 5KZ9L285B5;
 				INFOPLIST_FILE = CCPCalendar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hunbohui.yingbashaETP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CCPalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d44d12eb-f91d-45d7-ad2e-6485e627a330";
-				PROVISIONING_PROFILE_SPECIFIER = muying_develop;
+				PROVISIONING_PROFILE = "0b2b1add-568e-4291-8abd-a55f5af47594";
+				PROVISIONING_PROFILE_SPECIFIER = DevClad;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -481,14 +487,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4K9G5Z5YP8;
+				DEVELOPMENT_TEAM = 5KZ9L285B5;
 				INFOPLIST_FILE = CCPCalendar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hunbohui.yingbashaETP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CCPalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "eaf171fc-ff0f-4733-b614-0024479ab941";
-				PROVISIONING_PROFILE_SPECIFIER = yingbasha_inhouse_20171030;
+				PROVISIONING_PROFILE = "50559bf9-5fcf-4f30-aae6-93de11f0a7b0";
+				PROVISIONING_PROFILE_SPECIFIER = DisDle;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

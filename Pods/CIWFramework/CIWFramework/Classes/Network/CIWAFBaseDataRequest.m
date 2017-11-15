@@ -143,7 +143,7 @@
         urlStr = [self appendingEtagUriWithCacheResult:cacheResult withOriginUrl:urlStr];
 
 
-//        NSLog(@"--------------RequstUrl-----------(GET)\n  %@\n\n",urlStr);
+        NSLog(@"--------------RequstUrl-----------(GET)\n  %@\n\n",urlStr);
 
         __weak typeof(self) _weekSelf = self;
         _requestOperation = [manager GET:urlStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -160,7 +160,7 @@
     }else if([self getRequestMethod] == CIWRequestMethodPost){  //Post 请求
         
         
-//        NSLog(@"\n--------------RequstUrl-----------(POST)\n  %@\n   参数:\n%@\n\n",url,params);
+        NSLog(@"\n--------------RequstUrl-----------(POST)\n  %@\n   参数:\n%@\n\n",url,params);
         
         __weak typeof(self) _weekSelf = self;
         self.requestOperation = [manager POST:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {

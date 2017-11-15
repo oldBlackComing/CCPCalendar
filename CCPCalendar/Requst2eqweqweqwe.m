@@ -7,6 +7,7 @@
 //
 
 #import "Requst2eqweqweqwe.h"
+#import "BaseBaseModel.h"
 
 @implementation Requst2eqweqweqwe
 - (CIWRequestMethod)getRequestMethod{
@@ -14,16 +15,16 @@
 }
 
 - (NSString *)getURI{
-    return @"https://appid-ioss.xx-app.com/frontApi/getAboutUs?";//主页
+    return @"https://appid-ioss.xx-app.com/frontApi/getAboutUs";//主页
     //    return @"/ybs/home/index";//主页
 }
 
 - (void)processResult{
     
-    NSDictionary *result = [self.resultDic objectForKey:@"data"];
-    
-    if([result isKindOfClass:[NSDictionary class]]){
-//        [self.resultDic setValue:homeData forKey:KEY_MODEL];
+    if([self.resultDic isKindOfClass:[NSDictionary class]]){
+        BaseBaseModel *baseBaseModel = [[BaseBaseModel alloc] initWithDataDic:self.resultDic];
+
+        [self.resultDic setValue:baseBaseModel forKey:@"kkkkkk"];
     }
 }
 @end
