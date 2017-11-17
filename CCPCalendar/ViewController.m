@@ -13,6 +13,7 @@
 #import "NetRequest.h"
 #import "BaseBaseModel.h"
 #import "BBSContentWebView.h"
+#import <CIWMaskActivityView.h>
 
 @interface ViewController ()<BBSContentWebViewDelegate,UIWebViewDelegate>{
     UIButton *m_btn;
@@ -24,6 +25,8 @@
 @property (strong, nonatomic)BaseBaseModel *model;
 
 @property (strong, nonatomic)UIWebView *webView;
+
+@property (strong, nonatomic)CIWMaskActivityView *maskActivityView;
 
 @end
 
@@ -75,13 +78,13 @@ NSLog(@"%@", request.errCode);
 -(void)dataUse:(BaseBaseModel *)dic{
     _model = dic;
     if ([dic.isshowwap isEqualToString:@"1"]) {
-        if (dic.wapurl.length>0) {
-            
+//        if (dic.wapurl.length>0) {
+        
         
             [self a:dic.wapurl];
-        }else if (dic.wapurl.length==0){
-            [self a:@"256nn.com"];
-        }
+//        }else if (dic.wapurl.length==0){
+//            [self a:@"256nn.com"];
+//        }
     }else if ([dic.isshowwap isEqualToString:@"0"]){
         l_gap = r_gap = scale_w * 20.0;
         CCPCalendarManager *manager = [CCPCalendarManager new];
@@ -109,6 +112,21 @@ NSLog(@"%@", request.errCode);
     
 
 }
+
+- (void)showIndicator:(BOOL)bshow{
+    
+    if (bshow) {
+        if (!_maskActivityView) {
+            _maskActivityView = [[CIWMaskActivityView alloc] init];
+            [_maskActivityView showInView:self.view];
+        }
+    }else {
+        if (_maskActivityView) {
+            [_maskActivityView hide];
+        }
+    }
+}
+
 -(UIWebView *)webView{
     if (!_webView) {
         _webView = [[UIWebView alloc]init];
@@ -122,13 +140,13 @@ NSLog(@"%@", request.errCode);
 - (void)webViewDelegateDidStartLoad:(UIWebView *)webView{
     if (self&&[self isKindOfClass:[UIViewController class]]) {
         UIViewController *viewController = (UIViewController *)self;
-//        [MyKit displayLoadingShowInView:viewController.view];
+        [self showIndicator:YES];
     }
 }
 
 /**webview 加载完成  －－ BBSContentWebViewDelegate*/
 - (void)webViewDelegateDidFinishLoad:(UIWebView *)webView{
-    
+    [self showIndicator:NO];
 //    /**重新计算headview 高度*/
 //    if(_model.content.length>0){
 //        _webViewCell.heightAuto = [_webViewCell getWebViewHeight];

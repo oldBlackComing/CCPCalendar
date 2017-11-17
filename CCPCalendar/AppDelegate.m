@@ -46,7 +46,7 @@
     // 如需继续使用pushConfig.plist文件声明appKey等配置内容，请依旧使用[JPUSHService setupWithOption:launchOptions]方式初始化。
     [JPUSHService setupWithOption:launchOptions appKey:@"891bc264d902dfa65776a795"
                           channel:@"App Store"
-                 apsForProduction:NO
+                 apsForProduction:YES
             advertisingIdentifier:nil];
     return YES;
 }
