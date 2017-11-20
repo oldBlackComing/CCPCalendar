@@ -15,6 +15,7 @@
 		3F86079D1FBAC03900A43E89 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86079B1FBAC03900A43E89 /* NetRequest.m */; };
 		3F98F9C91FB45B1B00FFB703 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F98F9C71FB45B1B00FFB703 /* ListViewController.m */; };
 		3F98F9CA1FB45B1B00FFB703 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */; };
+		3FBBD0C61FC2E3E2009D5824 /* 启动图.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBD0C51FC2E3E2009D5824 /* 启动图.png */; };
 		8B684DBA1EEE3D3D006660B3 /* CCPCalendarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B684DA51EEE3D3D006660B3 /* CCPCalendarButton.m */; };
 		8B684DBB1EEE3D3D006660B3 /* CCPCalendarCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B684DA71EEE3D3D006660B3 /* CCPCalendarCellTableViewCell.m */; };
 		8B684DBC1EEE3D3D006660B3 /* CCPCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B684DA91EEE3D3D006660B3 /* CCPCalendarHeader.m */; };
@@ -52,6 +53,7 @@
 		3F98F9C61FB45B1B00FFB703 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		3F98F9C71FB45B1B00FFB703 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		3FBBD0C51FC2E3E2009D5824 /* 启动图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动图.png"; sourceTree = "<group>"; };
 		6E0F15D6510736E7B5A7369C /* Pods-CCPCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCPCalendar/Pods-CCPCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		83863CADF3C1C6031468378B /* libPods-CCPCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCPCalendar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B684DA41EEE3D3D006660B3 /* CCPCalendarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarButton.h; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				8B717CFA1ED65D2800A78DC8 /* Main.storyboard */,
 				8B717CFD1ED65D2800A78DC8 /* Assets.xcassets */,
 				8B717CFF1ED65D2800A78DC8 /* LaunchScreen.storyboard */,
+				3FBBD0C51FC2E3E2009D5824 /* 启动图.png */,
 				8B717D021ED65D2800A78DC8 /* Info.plist */,
 				8B717CF11ED65D2800A78DC8 /* Supporting Files */,
 				3F98F9C51FB4478C00FFB703 /* DataUse.h */,
@@ -279,6 +282,7 @@
 				8B717D011ED65D2800A78DC8 /* LaunchScreen.storyboard in Resources */,
 				8B717CFE1ED65D2800A78DC8 /* Assets.xcassets in Resources */,
 				3F98F9CA1FB45B1B00FFB703 /* ListViewController.xib in Resources */,
+				3FBBD0C61FC2E3E2009D5824 /* 启动图.png in Resources */,
 				3F86078B1FBA894D00A43E89 /* BBSContentWebView.xib in Resources */,
 				8B717CFC1ED65D2800A78DC8 /* Main.storyboard in Resources */,
 			);
