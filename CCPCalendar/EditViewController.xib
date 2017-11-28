@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController">
+            <connections>
+                <outlet property="textView" destination="iop-Jl-bPS" id="R2P-lT-2xH"/>
+                <outlet property="titleLabel" destination="mlK-l0-Eau" id="lcI-gx-yWr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mla-qN-rW0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o2-wJ-E1v">
+                            <rect key="frame" x="20" y="30" width="25" height="25"/>
+                            <state key="normal" image="shop_global_back">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="ba:" destination="-1" eventType="touchUpInside" id="dKa-v7-etT"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlK-l0-Eau">
+                            <rect key="frame" x="166" y="31.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ize-hE-UKL">
+                            <rect key="frame" x="325" y="27" width="30" height="30"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="OkC:" destination="-1" eventType="touchUpInside" id="GIo-NU-bYe"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HF-GI-OS8">
+                            <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="XG1-UC-2jv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1o2-wJ-E1v" firstAttribute="centerY" secondItem="Mla-qN-rW0" secondAttribute="centerY" constant="10" id="1Ib-TD-89j"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="7I4-6N-gJY"/>
+                        <constraint firstItem="Ize-hE-UKL" firstAttribute="centerY" secondItem="mlK-l0-Eau" secondAttribute="centerY" id="Atu-VZ-0LB"/>
+                        <constraint firstItem="mlK-l0-Eau" firstAttribute="centerY" secondItem="Mla-qN-rW0" secondAttribute="centerY" constant="10" id="Bl7-3n-gWV"/>
+                        <constraint firstItem="4HF-GI-OS8" firstAttribute="leading" secondItem="Mla-qN-rW0" secondAttribute="leading" id="D4e-xQ-k88"/>
+                        <constraint firstItem="1o2-wJ-E1v" firstAttribute="leading" secondItem="Mla-qN-rW0" secondAttribute="leading" constant="20" id="GUj-BT-V1i"/>
+                        <constraint firstAttribute="bottom" secondItem="4HF-GI-OS8" secondAttribute="bottom" id="H5d-kD-804"/>
+                        <constraint firstItem="mlK-l0-Eau" firstAttribute="centerX" secondItem="Mla-qN-rW0" secondAttribute="centerX" id="fNH-wE-rYW"/>
+                        <constraint firstAttribute="trailing" secondItem="4HF-GI-OS8" secondAttribute="trailing" id="hNO-B5-688"/>
+                        <constraint firstAttribute="height" constant="64" id="oUN-fe-y5U"/>
+                        <constraint firstAttribute="trailing" secondItem="Ize-hE-UKL" secondAttribute="trailing" constant="20" id="tGV-OA-6EQ"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iop-Jl-bPS">
+                    <rect key="frame" x="10" y="74" width="355" height="333.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="CF3-fd-OlT"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrV-MT-oQZ">
+                    <rect key="frame" x="40" y="597" width="295" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="u6I-Mt-2fX"/>
+                    </constraints>
+                    <state key="normal" title="add Diary">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="act:" destination="-1" eventType="touchUpInside" id="yyg-r6-4lp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iop-Jl-bPS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="3pr-hy-bMx"/>
+                <constraint firstItem="iop-Jl-bPS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="4ku-dN-HOS"/>
+                <constraint firstAttribute="bottom" secondItem="GrV-MT-oQZ" secondAttribute="bottom" constant="20" id="7c4-gG-esj"/>
+                <constraint firstAttribute="trailing" secondItem="Mla-qN-rW0" secondAttribute="trailing" id="8cH-nH-gTn"/>
+                <constraint firstItem="GrV-MT-oQZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="LH3-XD-blA"/>
+                <constraint firstItem="iop-Jl-bPS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="LzW-8B-iQc"/>
+                <constraint firstItem="Mla-qN-rW0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="S0X-9z-Zaq"/>
+                <constraint firstAttribute="trailing" secondItem="GrV-MT-oQZ" secondAttribute="trailing" constant="40" id="hm9-uJ-Dhs"/>
+                <constraint firstAttribute="trailing" secondItem="iop-Jl-bPS" secondAttribute="trailing" constant="10" id="kqU-l5-sEt"/>
+                <constraint firstItem="Mla-qN-rW0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="moC-SO-bIu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="shop_global_back" width="25" height="25"/>
+    </resources>
+</document>

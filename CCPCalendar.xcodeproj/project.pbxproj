@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F386C801FC5481E0098A4CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F386C821FC5481E0098A4CB /* InfoPlist.strings */; };
 		3F72E7461FBBE40E006E9D14 /* BaseBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72E7451FBBE40E006E9D14 /* BaseBaseModel.m */; };
+		3F77E8F31FC69F5600AB3E1A /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F77E8F11FC69F5600AB3E1A /* ListTableViewCell.m */; };
+		3F77E8F41FC69F5600AB3E1A /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F77E8F21FC69F5600AB3E1A /* ListTableViewCell.xib */; };
 		3F86078B1FBA894D00A43E89 /* BBSContentWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F8607881FBA894C00A43E89 /* BBSContentWebView.xib */; };
 		3F86078C1FBA894D00A43E89 /* BBSContentWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86078A1FBA894D00A43E89 /* BBSContentWebView.m */; };
 		3F86078F1FBA89C400A43E89 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86078D1FBA89C300A43E89 /* BaseRequest.m */; };
@@ -15,7 +18,12 @@
 		3F86079D1FBAC03900A43E89 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86079B1FBAC03900A43E89 /* NetRequest.m */; };
 		3F98F9C91FB45B1B00FFB703 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F98F9C71FB45B1B00FFB703 /* ListViewController.m */; };
 		3F98F9CA1FB45B1B00FFB703 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */; };
-		3FBBD0C61FC2E3E2009D5824 /* 启动图.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBD0C51FC2E3E2009D5824 /* 启动图.png */; };
+		3FD416321FC561EC00BE8918 /* 启动图.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD416341FC561EC00BE8918 /* 启动图.png */; };
+		3FFE334E1FCD3CED00806DD9 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE334C1FCD3CED00806DD9 /* EditViewController.m */; };
+		3FFE334F1FCD3CED00806DD9 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE334D1FCD3CED00806DD9 /* EditViewController.xib */; };
+		3FFE33521FCD535B00806DD9 /* BaseBaseModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE33511FCD535B00806DD9 /* BaseBaseModelList.m */; };
+		3FFE33551FCD619300806DD9 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE33541FCD619300806DD9 /* ListCell.m */; };
+		3FFE33571FCD619E00806DD9 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE33561FCD619E00806DD9 /* ListCell.xib */; };
 		8B684DBA1EEE3D3D006660B3 /* CCPCalendarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B684DA51EEE3D3D006660B3 /* CCPCalendarButton.m */; };
 		8B684DBB1EEE3D3D006660B3 /* CCPCalendarCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B684DA71EEE3D3D006660B3 /* CCPCalendarCellTableViewCell.m */; };
 		8B684DBC1EEE3D3D006660B3 /* CCPCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B684DA91EEE3D3D006660B3 /* CCPCalendarHeader.m */; };
@@ -37,23 +45,53 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F386C811FC5481E0098A4CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F386C831FC549560098A4CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		3F386C841FC549560098A4CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3F386C851FC549560098A4CB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F386C861FC5498F0098A4CB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		3F386C871FC5498F0098A4CB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3F386C881FC5498F0098A4CB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F386C891FC5499F0098A4CB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		3F386C8A1FC5499F0098A4CB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3F386C8B1FC549A00098A4CB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F386C8C1FC54B0F0098A4CB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3F386C8D1FC54B0F0098A4CB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3F386C8E1FC54B0F0098A4CB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3F67C1051FBD31C80066252D /* CCPCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CCPCalendar.entitlements; sourceTree = "<group>"; };
 		3F72E7441FBBE40E006E9D14 /* BaseBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBaseModel.h; sourceTree = "<group>"; };
 		3F72E7451FBBE40E006E9D14 /* BaseBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBaseModel.m; sourceTree = "<group>"; };
+		3F77E8F01FC69F5600AB3E1A /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		3F77E8F11FC69F5600AB3E1A /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		3F77E8F21FC69F5600AB3E1A /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		3F8607881FBA894C00A43E89 /* BBSContentWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBSContentWebView.xib; sourceTree = "<group>"; };
 		3F8607891FBA894C00A43E89 /* BBSContentWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSContentWebView.h; sourceTree = "<group>"; };
 		3F86078A1FBA894D00A43E89 /* BBSContentWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSContentWebView.m; sourceTree = "<group>"; };
 		3F86078D1FBA89C300A43E89 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		3F86078E1FBA89C300A43E89 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
-		3F8607901FBA8D7800A43E89 /* Requst2eqweqweqwe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Requst2eqweqweqwe.h; sourceTree = "<group>"; };
-		3F8607911FBA8D7800A43E89 /* Requst2eqweqweqwe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Requst2eqweqweqwe.m; sourceTree = "<group>"; };
+		3F8607901FBA8D7800A43E89 /* Requst2eqweqweqwe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Requst2eqweqweqwe.h; path = ../Requst2eqweqweqwe.h; sourceTree = "<group>"; };
+		3F8607911FBA8D7800A43E89 /* Requst2eqweqweqwe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Requst2eqweqweqwe.m; path = ../Requst2eqweqweqwe.m; sourceTree = "<group>"; };
 		3F86079B1FBAC03900A43E89 /* NetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		3F86079C1FBAC03900A43E89 /* NetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		3F98F9C51FB4478C00FFB703 /* DataUse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUse.h; sourceTree = "<group>"; };
-		3F98F9C61FB45B1B00FFB703 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		3F98F9C71FB45B1B00FFB703 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
-		3FBBD0C51FC2E3E2009D5824 /* 启动图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动图.png"; sourceTree = "<group>"; };
+		3F98F9C61FB45B1B00FFB703 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = ../ListViewController.h; sourceTree = "<group>"; };
+		3F98F9C71FB45B1B00FFB703 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = ../ListViewController.m; sourceTree = "<group>"; };
+		3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ListViewController.xib; path = ../ListViewController.xib; sourceTree = "<group>"; };
+		3FD416331FC561EC00BE8918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/启动图.png"; sourceTree = "<group>"; };
+		3FD416351FC561ED00BE8918 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/启动图.png"; sourceTree = "<group>"; };
+		3FD416361FC561EE00BE8918 /* ja */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ja; path = "ja.lproj/启动图.png"; sourceTree = "<group>"; };
+		3FD416371FC561F000BE8918 /* it */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = it; path = "it.lproj/启动图.png"; sourceTree = "<group>"; };
+		3FD416381FC561F100BE8918 /* fr */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fr; path = "fr.lproj/启动图.png"; sourceTree = "<group>"; };
+		3FD416391FC561F200BE8918 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/启动图.png"; sourceTree = "<group>"; };
+		3FD4163B1FC5621900BE8918 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3FFE334B1FCD3CED00806DD9 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		3FFE334C1FCD3CED00806DD9 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		3FFE334D1FCD3CED00806DD9 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		3FFE33501FCD535B00806DD9 /* BaseBaseModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBaseModelList.h; sourceTree = "<group>"; };
+		3FFE33511FCD535B00806DD9 /* BaseBaseModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBaseModelList.m; sourceTree = "<group>"; };
+		3FFE33531FCD619300806DD9 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		3FFE33541FCD619300806DD9 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
+		3FFE33561FCD619E00806DD9 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		6E0F15D6510736E7B5A7369C /* Pods-CCPCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPCalendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCPCalendar/Pods-CCPCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		83863CADF3C1C6031468378B /* libPods-CCPCalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCPCalendar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B684DA41EEE3D3D006660B3 /* CCPCalendarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPCalendarButton.h; sourceTree = "<group>"; };
@@ -145,6 +183,17 @@
 				8B684DB71EEE3D3D006660B3 /* UILabel+CCPLabel.m */,
 				8B684DB81EEE3D3D006660B3 /* UIView+CCPView.h */,
 				8B684DB91EEE3D3D006660B3 /* UIView+CCPView.m */,
+				3F98F9C61FB45B1B00FFB703 /* ListViewController.h */,
+				3F98F9C71FB45B1B00FFB703 /* ListViewController.m */,
+				3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */,
+				3F8607901FBA8D7800A43E89 /* Requst2eqweqweqwe.h */,
+				3F8607911FBA8D7800A43E89 /* Requst2eqweqweqwe.m */,
+				3F77E8F01FC69F5600AB3E1A /* ListTableViewCell.h */,
+				3F77E8F11FC69F5600AB3E1A /* ListTableViewCell.m */,
+				3F77E8F21FC69F5600AB3E1A /* ListTableViewCell.xib */,
+				3FFE33531FCD619300806DD9 /* ListCell.h */,
+				3FFE33541FCD619300806DD9 /* ListCell.m */,
+				3FFE33561FCD619E00806DD9 /* ListCell.xib */,
 			);
 			path = CCPCalendar;
 			sourceTree = "<group>";
@@ -184,19 +233,19 @@
 				3F86078D1FBA89C300A43E89 /* BaseRequest.m */,
 				3F72E7441FBBE40E006E9D14 /* BaseBaseModel.h */,
 				3F72E7451FBBE40E006E9D14 /* BaseBaseModel.m */,
+				3FFE33501FCD535B00806DD9 /* BaseBaseModelList.h */,
+				3FFE33511FCD535B00806DD9 /* BaseBaseModelList.m */,
+				3FFE334B1FCD3CED00806DD9 /* EditViewController.h */,
+				3FFE334C1FCD3CED00806DD9 /* EditViewController.m */,
+				3FFE334D1FCD3CED00806DD9 /* EditViewController.xib */,
 				8B684DA31EEE3D3D006660B3 /* CCPCalendar */,
 				8B717CFA1ED65D2800A78DC8 /* Main.storyboard */,
 				8B717CFD1ED65D2800A78DC8 /* Assets.xcassets */,
 				8B717CFF1ED65D2800A78DC8 /* LaunchScreen.storyboard */,
-				3FBBD0C51FC2E3E2009D5824 /* 启动图.png */,
+				3FD416341FC561EC00BE8918 /* 启动图.png */,
 				8B717D021ED65D2800A78DC8 /* Info.plist */,
 				8B717CF11ED65D2800A78DC8 /* Supporting Files */,
 				3F98F9C51FB4478C00FFB703 /* DataUse.h */,
-				3F98F9C61FB45B1B00FFB703 /* ListViewController.h */,
-				3F98F9C71FB45B1B00FFB703 /* ListViewController.m */,
-				3F98F9C81FB45B1B00FFB703 /* ListViewController.xib */,
-				3F8607901FBA8D7800A43E89 /* Requst2eqweqweqwe.h */,
-				3F8607911FBA8D7800A43E89 /* Requst2eqweqweqwe.m */,
 			);
 			path = CCPCalendar;
 			sourceTree = "<group>";
@@ -205,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				8B717CF21ED65D2800A78DC8 /* main.m */,
+				3F386C821FC5481E0098A4CB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +293,7 @@
 				TargetAttributes = {
 					8B717CED1ED65D2800A78DC8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5KZ9L285B5;
+						DevelopmentTeam = 6YUZFK5P2R;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -263,6 +313,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				it,
+				fr,
+				"zh-Hans",
 			);
 			mainGroup = 8B717CE51ED65D2700A78DC8;
 			productRefGroup = 8B717CEF1ED65D2800A78DC8 /* Products */;
@@ -280,11 +334,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B717D011ED65D2800A78DC8 /* LaunchScreen.storyboard in Resources */,
+				3F386C801FC5481E0098A4CB /* InfoPlist.strings in Resources */,
 				8B717CFE1ED65D2800A78DC8 /* Assets.xcassets in Resources */,
 				3F98F9CA1FB45B1B00FFB703 /* ListViewController.xib in Resources */,
-				3FBBD0C61FC2E3E2009D5824 /* 启动图.png in Resources */,
+				3FD416321FC561EC00BE8918 /* 启动图.png in Resources */,
+				3F77E8F41FC69F5600AB3E1A /* ListTableViewCell.xib in Resources */,
+				3FFE334F1FCD3CED00806DD9 /* EditViewController.xib in Resources */,
 				3F86078B1FBA894D00A43E89 /* BBSContentWebView.xib in Resources */,
 				8B717CFC1ED65D2800A78DC8 /* Main.storyboard in Resources */,
+				3FFE33571FCD619E00806DD9 /* ListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B684DBE1EEE3D3D006660B3 /* CCPCalendarModel.m in Sources */,
+				3FFE33551FCD619300806DD9 /* ListCell.m in Sources */,
 				8B684DC01EEE3D3D006660B3 /* CCPCalendarView.m in Sources */,
 				8B684DC21EEE3D3D006660B3 /* NSObject+CCPObjc.m in Sources */,
 				3F86078F1FBA89C400A43E89 /* BaseRequest.m in Sources */,
@@ -351,9 +410,11 @@
 				8B684DBF1EEE3D3D006660B3 /* CCPCalendarTable.m in Sources */,
 				8B717CF91ED65D2800A78DC8 /* ViewController.m in Sources */,
 				3F98F9C91FB45B1B00FFB703 /* ListViewController.m in Sources */,
+				3FFE334E1FCD3CED00806DD9 /* EditViewController.m in Sources */,
 				3F72E7461FBBE40E006E9D14 /* BaseBaseModel.m in Sources */,
 				8B684DC11EEE3D3D006660B3 /* NSDate+CCPCalendar.m in Sources */,
 				8B684DBA1EEE3D3D006660B3 /* CCPCalendarButton.m in Sources */,
+				3FFE33521FCD535B00806DD9 /* BaseBaseModelList.m in Sources */,
 				8B684DC31EEE3D3D006660B3 /* UILabel+CCPLabel.m in Sources */,
 				3F86078C1FBA894D00A43E89 /* BBSContentWebView.m in Sources */,
 				8B717CF61ED65D2800A78DC8 /* AppDelegate.m in Sources */,
@@ -361,6 +422,7 @@
 				3F86079D1FBAC03900A43E89 /* NetRequest.m in Sources */,
 				8B684DBB1EEE3D3D006660B3 /* CCPCalendarCellTableViewCell.m in Sources */,
 				8B684DBC1EEE3D3D006660B3 /* CCPCalendarHeader.m in Sources */,
+				3F77E8F31FC69F5600AB3E1A /* ListTableViewCell.m in Sources */,
 				8B684DBD1EEE3D3D006660B3 /* CCPCalendarManager.m in Sources */,
 				8B684DC41EEE3D3D006660B3 /* UIView+CCPView.m in Sources */,
 			);
@@ -369,10 +431,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3F386C821FC5481E0098A4CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F386C811FC5481E0098A4CB /* en */,
+				3F386C851FC549560098A4CB /* ja */,
+				3F386C881FC5498F0098A4CB /* it */,
+				3F386C8B1FC549A00098A4CB /* fr */,
+				3F386C8E1FC54B0F0098A4CB /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FD416341FC561EC00BE8918 /* 启动图.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FD416331FC561EC00BE8918 /* Base */,
+				3FD416351FC561ED00BE8918 /* en */,
+				3FD416361FC561EE00BE8918 /* ja */,
+				3FD416371FC561F000BE8918 /* it */,
+				3FD416381FC561F100BE8918 /* fr */,
+				3FD416391FC561F200BE8918 /* zh-Hans */,
+			);
+			name = "启动图.png";
+			sourceTree = "<group>";
+		};
 		8B717CFA1ED65D2800A78DC8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8B717CFB1ED65D2800A78DC8 /* Base */,
+				3F386C831FC549560098A4CB /* ja */,
+				3F386C861FC5498F0098A4CB /* it */,
+				3F386C891FC5499F0098A4CB /* fr */,
+				3F386C8C1FC54B0F0098A4CB /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -381,6 +472,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				8B717D001ED65D2800A78DC8 /* Base */,
+				3F386C841FC549560098A4CB /* ja */,
+				3F386C871FC5498F0098A4CB /* it */,
+				3F386C8A1FC5499F0098A4CB /* fr */,
+				3F386C8D1FC54B0F0098A4CB /* zh-Hans */,
+				3FD4163B1FC5621900BE8918 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -392,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -439,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -483,15 +581,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CCPCalendar/CCPCalendar.entitlements;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5KZ9L285B5;
+				DEVELOPMENT_TEAM = 6YUZFK5P2R;
 				INFOPLIST_FILE = CCPCalendar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CCPalendar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CCPalendar1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0b2b1add-568e-4291-8abd-a55f5af47594";
-				PROVISIONING_PROFILE_SPECIFIER = DevClad;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "30e7460c-de6d-47ec-be6e-f533992b0e23";
+				PROVISIONING_PROFILE_SPECIFIER = Dev..;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,15 +601,15 @@
 				CODE_SIGN_ENTITLEMENTS = CCPCalendar/CCPCalendar.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5KZ9L285B5;
+				DEVELOPMENT_TEAM = 6YUZFK5P2R;
 				INFOPLIST_FILE = CCPCalendar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CCPalendar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CCPalendar1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "50559bf9-5fcf-4f30-aae6-93de11f0a7b0";
-				PROVISIONING_PROFILE_SPECIFIER = DisDle;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "fc337ebf-f74e-4fe6-92df-ab615260bb48";
+				PROVISIONING_PROFILE_SPECIFIER = Dis..;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

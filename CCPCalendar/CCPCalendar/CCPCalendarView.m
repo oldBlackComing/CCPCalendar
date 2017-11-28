@@ -13,7 +13,7 @@
 #import "CCPCalendarModel.h"
 #import "CCPCalendarTable.h"
 
-@interface CCPCalendarView()
+@interface CCPCalendarView()<listClickDelegate>
 {
     CGFloat bottomH;
     //底部按钮
@@ -56,6 +56,7 @@
 - (CCPCalendarHeader *)headerView {
     if (!_headerView) {
         _headerView = [[CCPCalendarHeader alloc] init];
+        _headerView.delegate = self;
         _headerView.manager = self.manager;
         [_headerView initSubviews];
         CGFloat h = [_headerView getSupH];
@@ -68,16 +69,18 @@
 
 
 - (void)compelet {
-    if (self.manager.complete) {
+    NSString *sdnjaDate = nil;
+    
+    
         NSMutableArray *marr = [NSMutableArray array];
-            if (self.manager.selectType == select_type_single) {
-                if (self.manager.selectArr.count == 0) {
-                    if (self.manager.close) {
-                        self.manager.close();
-                    }
-                    return;
-                }
-            }
+//            if (self.manager.selectType == select_type_single) {
+//                if (self.manager.selectArr.count == 0) {
+//                    if (self.manager.close) {
+//                        self.manager.close();
+//                    }
+//                    return;
+//                }
+//            }
         for (NSDate *date in self.manager.selectArr) {
             NSString *year = [NSString stringWithFormat:@"%ld",(long)[date getYear]];
             NSString *month = [NSString stringWithFormat:@"%02ld",(long)[date getMonth]];
@@ -86,14 +89,22 @@
             NSInteger week = [date getWeek];
             NSString *ccpDate = [NSString stringWithFormat:@"%@-%@-%@",year,month,day];
             NSArray *arr = @[ccpDate,year,month,day,weekString,@(week)];
+            sdnjaDate = ccpDate;
+            
             CCPCalendarModel *model = [[CCPCalendarModel alloc] initWithArray:arr];
             [marr addObject:model];
+            
         }
+        
+        if (self.delegate&&[self.delegate respondsToSelector:@selector(selectDea:)]) {
+            [self.delegate selectDea:sdnjaDate];
+        }
+
         self.manager.complete(marr);
-        if (self.manager.close) {
-            self.manager.close();
-        }
-    }
+//        if (self.manager.close) {
+//            self.manager.close();
+//        }
+    
     
 }
 
@@ -108,8 +119,8 @@
     saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     saveBtn.backgroundColor = rgba(255, 255, 255, 0.2);
     saveBtn.frame = CGRectMake(0, t_gap, main_width, btnH);
-    [saveBtn setTitle:@"OK"  forState:UIControlStateNormal];
-    [saveBtn setTitle:@"OK"  forState:UIControlStateDisabled];
+    [saveBtn setTitle:@"add diary"  forState:UIControlStateNormal];
+    [saveBtn setTitle:@"add diary"  forState:UIControlStateDisabled];
     [saveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [saveBtn setTitleColor:rgba(255, 255, 255, 0.7) forState:UIControlStateDisabled];
 //    saveBtn.layer.cornerRadius = 5 * scale_w;
@@ -143,4 +154,9 @@
     }
 }
 
+-(void)list{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(list)]) {
+        [self.delegate list];
+    }
+}
 @end

@@ -28,6 +28,14 @@ typedef NS_ENUM(NSInteger, CCPCalendar_select_type) {
     select_type_multiple,
 };
 
+@protocol selectDelegate1 <NSObject>
+
+-(void)selectDea:(NSString *)date;
+
+-(void)list;
+
+
+@end
 //关闭
 typedef void(^closeBlock)(void);
 //清除
@@ -122,5 +130,6 @@ typedef void(^completeBlock)(NSArray <__kindof NSObject *> *stArr);
 //多选没有过去
 - (void)show_mutil:(completeBlock)complete;
 
+@property (strong, nonatomic)id<selectDelegate1>delegate;
 
 @end

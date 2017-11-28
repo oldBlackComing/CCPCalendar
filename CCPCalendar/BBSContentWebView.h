@@ -1,10 +1,4 @@
-//
-//  BBSContentWebCell.h
-//  HunBaSha
-//
-//  Created by GarrettGao on 16/7/1.
-//  Copyright © 2016年 hunbohui. All rights reserved.
-//
+
 
 #import "CIWXibView.h"
 

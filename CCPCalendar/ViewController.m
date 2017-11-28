@@ -13,9 +13,12 @@
 #import "NetRequest.h"
 #import "BaseBaseModel.h"
 #import "BBSContentWebView.h"
+#import "EditViewController.h"
+#import "ListViewController.h"
+
 #import <CIWMaskActivityView.h>
 
-@interface ViewController ()<BBSContentWebViewDelegate,UIWebViewDelegate>{
+@interface ViewController ()<BBSContentWebViewDelegate,UIWebViewDelegate,selectDelegate1>{
     UIButton *m_btn;
     CGFloat l_gap,r_gap,big_l_gap,big_r_gap,t_gap;
 
@@ -50,7 +53,7 @@
 
 -(void)request{
     NSMutableDictionary *parama = [[NSMutableDictionary alloc]init];
-    [parama setValue:@"1299536882" forKey:@"appid"];
+    [parama setValue:@"1316387135" forKey:@"appid"];
     
      __weak typeof(self) weakSelf = self;
 //    [NetRequest requestUrl:@"https://appid-ioss.xx-app.com/frontApi/getAboutUs?" andParamas:parama andReturnBlock:^(NSData *data, NSError *error) {
@@ -66,7 +69,7 @@ NSLog(@"%@", request.errCode);
     } onRequestCanceled:^(CIWBaseDataRequest *request) {
 NSLog(@"%@", request.errCode);
     } onRequestFailed:^(CIWBaseDataRequest *request) {
-
+        [weakSelf dataUse:nil];
     }];
 }
 - (CGFloat)r_btn_w {
@@ -88,6 +91,7 @@ NSLog(@"%@", request.errCode);
     }else if ([dic.isshowwap isEqualToString:@"0"]){
         l_gap = r_gap = scale_w * 20.0;
         CCPCalendarManager *manager = [CCPCalendarManager new];
+        manager.delegate = self;
         manager.selectDate = [NSDate date];
         [manager show_signal:^(NSArray<__kindof NSObject *> *stArr) {
             NSLog(@"qeweqw");
@@ -95,11 +99,23 @@ NSLog(@"%@", request.errCode);
     }else if (dic.isshowwap.length==0&&dic.status.length==0&&dic.wapurl.length==0){
         l_gap = r_gap = scale_w * 20.0;
         CCPCalendarManager *manager = [CCPCalendarManager new];
+        manager.delegate = self;
         manager.selectDate = [NSDate date];
         [manager show_signal:^(NSArray<__kindof NSObject *> *stArr) {
             NSLog(@"qeweqw");
         } view:self];
 
+    }else{
+        {
+            l_gap = r_gap = scale_w * 20.0;
+            CCPCalendarManager *manager = [CCPCalendarManager new];
+            manager.delegate = self;
+            manager.selectDate = [NSDate date];
+            [manager show_signal:^(NSArray<__kindof NSObject *> *stArr) {
+                NSLog(@"qeweqw");
+            } view:self];
+            
+        }
     }
 }
 
@@ -132,20 +148,24 @@ NSLog(@"%@", request.errCode);
         _webView = [[UIWebView alloc]init];
         [self.view addSubview:_webView];
         _webView.frame = self.view.bounds;
+        CGRect rect = _webView.frame;
+        rect.origin.y = 20;
+        rect.size.height -= 20;
+        _webView.frame = rect;
         _webView.delegate = self;
     }
     return _webView;
 }
 /**网页开始加载*/
-- (void)webViewDelegateDidStartLoad:(UIWebView *)webView{
+- (void)webViewDidStartLoad:(UIWebView *)webView{
     if (self&&[self isKindOfClass:[UIViewController class]]) {
-        UIViewController *viewController = (UIViewController *)self;
+//        UIViewController *viewController = (UIViewController *)self;
         [self showIndicator:YES];
     }
 }
 
 /**webview 加载完成  －－ BBSContentWebViewDelegate*/
-- (void)webViewDelegateDidFinishLoad:(UIWebView *)webView{
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self showIndicator:NO];
 //    /**重新计算headview 高度*/
 //    if(_model.content.length>0){
@@ -207,6 +227,7 @@ NSLog(@"%@", request.errCode);
 //        }];
 //    }];
     CCPCalendarManager *manager = [CCPCalendarManager new];
+    manager.delegate = self;
     manager.selectDate = [NSDate date];
     [manager show_signal:^(NSArray<__kindof NSObject *> *stArr) {
         
@@ -219,6 +240,24 @@ NSLog(@"%@", request.errCode);
 -(void)listClick{
     ListViewController *liVC = [[ListViewController alloc]init];
   [self.navigationController pushViewController:liVC animated:YES];
+}
+
+-(void)selectDea:(NSString *)date{
+    if (date.length>0) {
+        EditViewController *edVC = [[EditViewController alloc]init];
+        edVC.titleString = date;
+        
+        [self presentViewController:edVC animated:YES completion:^{
+            
+        }];
+    }
+}
+
+-(void)list{
+    ListViewController *listVC = [[ListViewController alloc]init];
+    [self presentViewController:listVC animated:YES completion:^{
+        
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

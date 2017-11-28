@@ -1,10 +1,3 @@
-//
-//  BBSContentWebCell.m
-//  HunBaSha
-//
-//  Created by GarrettGao on 16/7/1.
-//  Copyright © 2016年 hunbohui. All rights reserved.
-//
 
 #import "BBSContentWebView.h"
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width //     屏幕宽度

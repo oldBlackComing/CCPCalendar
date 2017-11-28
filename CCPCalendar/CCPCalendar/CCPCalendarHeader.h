@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "CCPCalendarManager.h"
 
+@protocol listClickDelegate <NSObject>
+
+-(void)list;
+
+@end
 @interface CCPCalendarHeader : UIView
+
+@property (strong, nonatomic)id <listClickDelegate> delegate;
 
 @property (nonatomic, strong) CCPCalendarManager *manager;
 

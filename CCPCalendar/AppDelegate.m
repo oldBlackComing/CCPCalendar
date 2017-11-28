@@ -26,6 +26,8 @@
     // Override point for customization after application launch.
     //Required
     //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
+    
+    [UIApplication  sharedApplication].applicationIconBadgeNumber=0;
     JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
     entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
@@ -44,7 +46,7 @@
     // init Push
     // notice: 2.1.5版本的SDK新增的注册方法，改成可上报IDFA，如果没有使用IDFA直接传nil
     // 如需继续使用pushConfig.plist文件声明appKey等配置内容，请依旧使用[JPUSHService setupWithOption:launchOptions]方式初始化。
-    [JPUSHService setupWithOption:launchOptions appKey:@"891bc264d902dfa65776a795"
+    [JPUSHService setupWithOption:launchOptions appKey:@"4530350f66dd09abe9ac2aea"
                           channel:@"App Store"
                  apsForProduction:YES
             advertisingIdentifier:nil];
@@ -107,6 +109,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+    [UIApplication  sharedApplication].applicationIconBadgeNumber=0;
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
 }
 

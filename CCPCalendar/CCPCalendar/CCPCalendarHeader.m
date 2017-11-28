@@ -54,15 +54,15 @@
  * 最上方按钮
  */
 - (void)functionBtns {
-    l_btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [l_btn setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
-    l_btn.titleLabel.font = [UIFont systemFontOfSize:scale_w * 20];
-    l_btn.frame = CGRectMake(l_gap, t_gap + 5, scale_w * 50, scale_w * 25);
-    [l_btn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
-    [l_btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 30)];
+//    l_btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [l_btn setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+//    l_btn.titleLabel.font = [UIFont systemFontOfSize:scale_w * 20];
+//    l_btn.frame = CGRectMake(l_gap, t_gap + 5, scale_w * 50, scale_w * 25);
+//    [l_btn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
+//    [l_btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 30)];
     [self addSubview:l_btn];
     r_btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [r_btn setTitle:@"清除" forState:UIControlStateNormal];
+    [r_btn setTitle:@"diary list" forState:UIControlStateNormal];
     r_btn.titleLabel.font = [UIFont systemFontOfSize:14.0 * scale_w];
     r_btn.titleLabel.textColor = [UIColor whiteColor];
     [r_btn addTarget:self action:@selector(clear) forControlEvents:UIControlEventTouchUpInside];
@@ -154,10 +154,13 @@
 }
 
 - (void)clear {
-    [[self.manager mutableArrayValueForKey:@"selectArr"] removeAllObjects];
-    if (self.manager.clean) {
-        self.manager.clean();
+//    [[self.manager mutableArrayValueForKey:@"selectArr"] removeAllObjects];
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(list)]) {
+        [self.delegate list];
     }
+//    if (self.manager.clean) {
+//        self.manager.clean();
+//    }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {

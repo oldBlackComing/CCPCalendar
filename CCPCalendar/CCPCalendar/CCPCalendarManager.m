@@ -10,7 +10,7 @@
 #import "CCPCalendarView.h"
 #import "AppDelegate.h"
 
-@interface CCPCalendarManager()
+@interface CCPCalendarManager()<selectDelegate>
 @property (nonatomic, strong) CCPCalendarView *av;
 @end
 
@@ -26,6 +26,8 @@
 - (void)calendar {
     if (!av) {
         av = [[CCPCalendarView alloc] init];
+        av.delegate = self;
+        
         av.frame = CGRectMake(0, main_height, main_width, main_height);
         av.manager = self;
         av.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-date"]];
@@ -187,5 +189,17 @@
     self.selectType = select_type_multiple;
     self.complete = complete;
     [self calendar];
+}
+
+-(void)selectDea:(NSString *)date{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(selectDea:)]) {
+        [self.delegate selectDea:date];
+    }
+}
+
+-(void)list{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(list)]) {
+        [self.delegate list];
+    }
 }
 @end
